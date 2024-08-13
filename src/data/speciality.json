@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "icon": "/icons/cruise.svg",
+    "bg": "/image/special/gym.jpg",
+    "title": "Cannal Crousing ",
+    "desc": "Cruising through the canals of the Sundarbans mangrove forest on a silent boat is an experience unlike any other. As you glide along the tranquil waters, surrounded by the lush greenery and rich biodiversity of this unique ecosystem ..."
+  },
+  {
+    "id": 2,
+    "icon": "/icons/boat.svg",
+    "bg": "/image/special/spa.jpg",
+    "title": "pick & drop",
+    "desc": "Imagine a charming boat trip arrives to pick you up for resort from Mongla Bus Stand Ferry Ghat.It will be an unique experience of being ferried across by a boat create a delightful and memorable start to your journey."
+  }
+]

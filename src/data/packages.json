@@ -1,0 +1,268 @@
+[
+  {
+    "id": 1,
+    "img": "/image/rooms/r3.jpg",
+    "title": "Duplex Cottage",
+    "images": [
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002988/duplex.jpeg_z8qfes.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002990/duplex2.jpeg_ceectu.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002990/duplex3.jpeg_yxyuzm.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002975/duplex4.jpeg_ftryob.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002990/duplex2.jpeg_ceectu.jpg"
+      }
+    ],
+    "price": "Starts from Bdt 3200 / $42",
+    "desc": "Like a peaceful fortress away from the hustle-bustle, relax in your king-size bed with plush mattresses.",
+    "info": {
+      "size": "272 + 240 sqf",
+      "person": "6",
+      "bed": 3,
+      "bath": 1
+    },
+    "packages": [
+                {
+                    "name": "Six people in a Duplex cottage",
+                    "price": "3200 bdt / 42"
+                },
+                {
+                    "name": "Five people in a Duplex cottage",
+                    "price": "3400 bdt / 44"
+                },
+                {
+                    "name": "Four people in a Duplex cottage",
+                    "price": "3800 bdt / 48"
+                },
+                {
+                    "name": "Three people in a Duplex cottage",
+                    "price": "4400 bdt / 54"
+                },
+                {
+                    "name": "Two people in a Duplex cottage",
+                    "price": "5500 bdt / 65"
+                },
+                {
+                    "name": "Single people in a Duplex cottage",
+                    "price": "9000 bdt / 100"
+                }
+            ],
+            "includes":[
+              "1-6 persons",
+
+
+                 "Boat Pick Drop Service from Mongla",
+
+
+                 "Three time meals",
+
+
+                 "Canal Cruising"
+            ],
+            "additional":[
+              {
+                "title": "Pick & Drop service timing",
+                "value": "12 Noon"
+              },
+              {
+                "title": "Children policy",
+                "value": "6+ full payment Below 6- only food costs"
+              }
+            ]
+  },
+  {
+    "id": 2,
+    "img": "/image/rooms/r4.jpg",
+    "title": "Premium Cottage",
+    "price": "Starts from Bdt 3000 / $40",
+    "desc": "A perfect honeymoon cottage with better privacy for your family. Swings with river & forest background to keep your staycation framed with photos.",
+    "images": [
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002973/premium5_cdflmy.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002967/premium3_ovuhkz.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002966/pemium4_zyoybu.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002966/premium2_u1wrhp.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002973/premium5_cdflmy.jpg"
+      }
+    ],
+    "info": {
+      "size": "256 sqf",
+      "person": 2,
+      "bed": 1,
+      "bath": 1
+    },
+    "packages": [
+                {
+                    "name": "Two people in a single cottage",
+                    "price": "4500 bdt / 55"
+                },
+                {
+                    "name": "Three people in a single cottage",
+                    "price": "3500 bdt / 45"
+                },
+                {
+                    "name": "Four people in a single cottage",
+                    "price": "3000 bdt / 40"
+                },
+                {
+                    "name": "Single person in a single cottage",
+                    "price": "7400 bdt / 84"
+                }
+            ],
+            "includes":[
+
+                 "1-4 persons",
+
+
+                 "Boat Pick Drop Service from Mongla",
+
+
+                 "Three time meals",
+
+
+                 "Canal Cruising"
+
+            ],
+            "additional":[
+              {
+                "title": "pick & drop service timing",
+                "value": "12 Noon"
+              },
+              {
+                "title": "Children policy",
+                "value": "6+ full payment Below 6- only food costs"
+              }
+            ]
+  },
+  {
+    "id": 3,
+    "img": "/image/rooms/r1.jpg",
+    "title": "Eco Couple Cottage",
+    "desc": "Perfect place to mingle with your partner or stay alone. You will see river & forest from your bed.",
+    "price": "Starts from Bdt 3850 / $48",
+    "images": [
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002974/economy1_znzev3.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002965/economy2_vern4d.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002965/economy_mrcevp.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002964/economy3_bpfcap.jpg"
+      }
+    ],
+    "info": {
+      "size": "168 sqf",
+      "person": 2,
+      "bed": 1,
+      "bath": 1
+    },
+    "packages": [
+                {
+                    "name": "Two people in a single cottage",
+                    "price": "3850 bdt / 48"
+                },
+                {
+                    "name": "Three people in a single cottage",
+                    "price": "3200 bdt / 42"
+                },
+                {
+                    "name": "Four people in a single cottage",
+                    "price": "2650 bdt / 36"
+                },
+                {
+                    "name": "Single person in a single cottage",
+                    "price": "5400 bdt / 64"
+                }
+            ],
+             "includes":[
+                 "1-2 persons",
+
+
+                 "Boat Pick Drop Service from Mongla",
+
+
+                 "Three time meals",
+
+
+                 "Canal Cruising"
+            ],
+            "additional":[
+              {
+                "title": "pick & drop service timing",
+                "value": "12 Noon"
+              },
+              {
+                "title": "Children policy",
+                "value": "6+ full payment Below 6- only food costs"
+              }
+            ]
+  },
+  {
+    "id": 4,
+    "img": "/image/rooms/r2.jpg",
+    "title": "Quad Cottage",
+    "price": "Starts from Bdt 2650 / $36",
+    "desc": "Cozy stay for groups & family, river & forest view rooms.",
+    "images": [
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002966/quad1_jvguzs.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002967/quad2_bhrdpx.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002968/quad3_fitbop.jpg"
+      },
+      {
+        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002968/quad4_xe8r98.jpg"
+      }
+    ],
+    "info": {
+      "size": "240 sqf",
+      "person": 4,
+      "bed": 2,
+      "bath": 1
+    },
+    "includes":[
+              "1-5 persons",
+
+
+                 "Boat Pick Drop Service from Mongla",
+
+
+                 "Three time meals",
+
+
+                 "Canal Cruising"
+            ],
+            "additional":[
+              {
+                "title": "pick & drop service timing",
+                "value": "12 Noon"
+              },
+              {
+                "title": "Children policy",
+                "value": "6+ full payment Below 6- only food costs"
+              }
+            ]
+  }
+]

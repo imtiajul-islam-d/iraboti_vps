@@ -1,0 +1,175 @@
+[
+  {
+    "id": 1,
+    "img": "/image/rooms/r3.jpg",
+    "title": "Duplex Cottage",
+    "images": [
+      {
+        "img": "/image/rooms/duplex/duplex1.jpg"
+      },
+      {
+        "img": "/image/rooms/duplex/duplex2.jpg"
+      },
+      {
+        "img": "/image/rooms/duplex/duplex3.jpg"
+      },
+      {
+        "img": "/image/rooms/duplex/duplex4.jpg"
+      }
+    ],
+    "price": "Starts from Bdt 8000 / 90",
+    "desc": "Experience rain & moonlight nights with your friends & foes from the upper deck fortress like Duplex villa.",
+    "info": {
+      "size": "272 + 240 sqf",
+      "person": "6",
+      "bed": 3,
+      "bath": 1
+    },
+    "amenities":[
+      {
+        "title":"person",
+        "value": "1-6 persons"
+      },
+      {
+        "title":"Breakfast",
+        "value": "Breakfast"
+      },
+      {
+        "title":"misc",
+        "value": "Shower gel, Shampoo, Hand Wash, Comb, Mineral Waters etc."
+      }
+  ],
+  "in": "1pm",
+  "out":"11am"
+
+  },
+  {
+    "id": 2,
+    "img": "/image/rooms/r4.jpg",
+    "title": "Premium Cottage",
+    "price": "Starts from Bdt 5000 / 60",
+    "desc": "Experience rain & moonlight nights with your friends & foes from the upper deck fortress like Duplex villa.",
+    "images": [
+      {
+        "img": "/image/rooms/premium/premium.jpg"
+      },
+      {
+        "img": "/image/rooms/premium/premium2.jpg"
+      },
+      {
+        "img": "/image/rooms/premium/premium3.jpg"
+      },
+      {
+        "img": "/image/rooms/premium/premium4.jpg"
+      }
+    ],
+    "info": {
+      "size": "256 sqf",
+      "person": 2,
+      "bed": 1,
+      "bath": 1
+    },
+    "amenities":[
+      {
+        "title":"person",
+        "value": "1-4 persons"
+      },
+      {
+        "title":"Breakfast",
+        "value": "Breakfast"
+      },
+      {
+        "title":"misc",
+        "value": "Shower gel, Shampoo, Hand Wash, Comb, Mineral Waters etc."
+      }
+  ],
+  "in": "1pm",
+  "out":"11am"
+  },
+  {
+    "id": 3,
+    "img": "/image/rooms/r1.jpg",
+    "title": "Eco Couple Cottage",
+    "desc": "Experience rain & moonlight nights with your friends & foes from the upper deck fortress like Duplex villa.",
+    "price": "Starts from Bdt 3000 / 40",
+    "images": [
+      {
+        "img": "/image/rooms/eco/eco.jpg"
+      },
+      {
+        "img": "/image/rooms/eco/eco1.jpg"
+      },
+      {
+        "img": "/image/rooms/eco/eco2.jpg"
+      },
+      {
+        "img": "/image/rooms/eco/eco3.jpg"
+      }
+    ],
+    "info": {
+      "size": "168 sqf",
+      "person": 2,
+      "bed": 1,
+      "bath": 1
+    },
+     "amenities":[
+      {
+        "title":"person",
+        "value": "1-4 persons"
+      },
+      {
+        "title":"Breakfast",
+        "value": "Breakfast"
+      },
+      {
+        "title":"misc",
+        "value": "Shower gel, Shampoo, Hand Wash, Comb, Mineral Waters etc."
+      }
+  ],
+  "in": "1pm",
+  "out":"11am"
+  },
+  {
+    "id": 4,
+    "img": "/image/rooms/r2.jpg",
+    "title": "Quad Cottage",
+    "price": "Starts from Bdt 4000 / 50",
+    "desc": "Experience rain & moonlight nights with your friends & foes from the upper deck fortress like Duplex villa.",
+    "images": [
+      {
+        "img": "/image/rooms/quad/quad1.jpg"
+      },
+      {
+        "img": "/image/rooms/quad/quad2.jpg"
+      },
+      {
+        "img": "/image/rooms/quad/quad3.jpg"
+      },
+      {
+        "img": "/image/rooms/quad/quad4.jpg"
+      }
+    ],
+    "info": {
+      "size": "240 sqf",
+      "person": 4,
+      "bed": 2,
+      "bath": 1
+    },
+     "amenities":[
+      {
+        "title":"person",
+        "value": "1-5 persons"
+      },
+      {
+        "title":"Breakfast",
+        "value": "Breakfast"
+      },
+      {
+        "title":"misc",
+        "value": "Shower gel, Shampoo, Hand Wash, Comb, Mineral Waters etc."
+      }
+  ],
+  "in": "1pm",
+  "out":"11am"
+  }
+]

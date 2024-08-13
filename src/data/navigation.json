@@ -1,0 +1,39 @@
+{
+  "navigation": {
+    "links": [
+      {
+        "id": 1,
+        "title": "Home",
+        "link": "/"
+      },
+      {
+        "id": 2,
+        "title": "About",
+        "link": "/about"
+      },
+      {
+        "id": 3,
+        "title": "Rooms",
+        "link": "/rooms"
+      },
+      {
+        "id": 4,
+        "title": "Packages",
+        "link": "/packages"
+      },
+
+      {
+        "id": 5,
+        "title": "Contact",
+        "link": "/contact"
+      }
+    ]
+  },
+  "logo": {
+    "img": "/image/nav_logo.svg",
+    "alt": "site-logo"
+  },
+  "phone": "+8801404004400",
+  "lang": ["EN", "BN", "IN", "ES", "CN", "JP"],
+  "btn": "Booking Your Stay"
+}

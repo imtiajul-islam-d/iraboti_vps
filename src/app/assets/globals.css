@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  /* colors */
+  :root {
+    --primary: #122223,
+    --secondary: #F9DABA,
+    --bg-1: #F8F5F0;
+    --bg-2: #EDF5F0;
+    --border: #DDDDDD;
+  }
+
+  /* typography  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-medium font-heading;
+}
+
+h1 {
+  @apply 2xl:text-[5.75rem] xl:text-7xl md:text-6xl text-4xl leading-snug;
+}
+
+h2 {
+  @apply lg:text-[4rem] md:text-5xl text-4xl  md:leading-normal ;
+}
+h3 {
+  @apply lg:text-4xl text-2xl;
+}
+h4 {
+  @apply text-3xl;
+}
+h5 {
+  @apply text-xl;
+}
+h6, .th {
+  @apply text-[1.3125rem] leading-tight;
+}
+
+p, label {
+  @apply text-[1.0625rem] leading-8;
+}
+.p_m {
+  @apply text-[1.0625rem] leading-8 font-medium;
+}
+
+.link {
+  @apply text-[.9375rem] leading-7 hover:text-secondary/70 focus:text-secondary/70 transition-colors;
+}
+.link_m {
+  @apply text-[.9375rem] leading-7 font-medium;
+}
+
+/* spacing  */
+
+/* Layout  */
+
+  .container_outer {
+    @apply max-w-[1920px] mx-auto md:px-[.625rem] md:mt-[.625rem];
+  }
+
+  .container_inner_lg {
+    @apply mx-[.625rem] max-w-[1900px] 2xl:px-[3.125rem];
+  }
+  .container_inner_sm {
+    @apply mx-[.625rem] xl:max-w-[1440px] xl:px-16 md:px-8 px-4 2xl:max-w-[1460px] 2xl:px-[1.875em] 2xl:mx-auto;
+  }
+
+  .rounded_all {
+    @apply rounded-none md:rounded-none;
+  }
+
+  /* Gaps  */
+   .section_gap {
+    @apply xl:py-[6.25rem] lg:py-20 md:py-[7.5rem] py-20 px-0 md:px-8 2xl:px-16;
+   }
+  .bigger_gap{
+    @apply 2xl:mt-[6.25rem] xl:mt-20 lg:mt-16 mt-12 gap-y-20 sm:gap-y-16 sm:gap-x-6 xl:gap-16;
+  }
+
+   @layer components {
+    .button {
+      @apply px-8 py-5 text-white rounded-full bg-primary md:py-4 md:px-6 hover:bg-secondary/50 transition-colors hover:text-primary;
+    }
+   }
+
+
+.embla__slide {
+  transition: opacity 0.2s ease-in-out;
+}
+.embla__slide:not(.is-snapped) {
+  opacity: 0.5;
+}
+
+.custom-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0;
+}
+
+.custom-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--shadcn-dot-color, #ccc);
+  transition: background-color 0.3s;
+  border: 0;
+}
+
+.carousel-dot:hover,
+.carousel-dot:focus {
+  background-color: var(--shadcn-dot-hover-color, #666);
+}
+
+.carousel-dot--selected {
+  background-color: var(--shadcn-dot-selected-color, #000);
+}
+
+
+/* Lenis css  */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* scroll bar  */
+
+body::-webkit-scrollbar {
+  width: 0;
+
+  }
