@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from "../../../../public/image/banner/banner2.webp"
+import img from "../../../../public/image/banner/banner2.jpg"
 
 export default function Package_banner() {
     return (
