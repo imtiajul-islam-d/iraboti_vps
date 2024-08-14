@@ -5,19 +5,16 @@
     "title": "Duplex Cottage",
     "images": [
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002988/duplex.jpeg_z8qfes.jpg"
+        "img": "/image/rooms/duplex/duplex1.jpg"
       },
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002990/duplex2.jpeg_ceectu.jpg"
+        "img": "/image/rooms/duplex/duplex2.jpg"
       },
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002990/duplex3.jpeg_yxyuzm.jpg"
+        "img": "/image/rooms/duplex/duplex3.jpg"
       },
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002975/duplex4.jpeg_ftryob.jpg"
-      },
-      {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002990/duplex2.jpeg_ceectu.jpg"
+        "img": "/image/rooms/duplex/duplex4.jpg"
       }
     ],
     "price": "Starts from Bdt 3200 / $42",
@@ -85,19 +82,16 @@
     "desc": "A perfect honeymoon cottage with better privacy for your family. Swings with river & forest background to keep your staycation framed with photos.",
     "images": [
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002973/premium5_cdflmy.jpg"
+        "img": "/image/rooms/premium/premium.jpg"
       },
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002967/premium3_ovuhkz.jpg"
+        "img": "/image/rooms/premium/premium2.jpg"
       },
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002966/pemium4_zyoybu.jpg"
+        "img": "/image/rooms/premium/premium3.jpg"
       },
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002966/premium2_u1wrhp.jpg"
-      },
-      {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002973/premium5_cdflmy.jpg"
+        "img": "/image/rooms/premium/premium4.jpg"
       }
     ],
     "info": {
@@ -157,16 +151,16 @@
     "price": "Starts from Bdt 3850 / $48",
     "images": [
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002974/economy1_znzev3.jpg"
+        "img": "/image/rooms/eco/eco.jpg"
       },
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002965/economy2_vern4d.jpg"
+        "img": "/image/rooms/eco/eco1.jpg"
       },
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002965/economy_mrcevp.jpg"
+        "img": "/image/rooms/eco/eco2.jpg"
       },
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002964/economy3_bpfcap.jpg"
+        "img": "/image/rooms/eco/eco3.jpg"
       }
     ],
     "info": {
@@ -224,16 +218,16 @@
     "desc": "Cozy stay for groups & family, river & forest view rooms.",
     "images": [
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002966/quad1_jvguzs.jpg"
+        "img": "/image/rooms/quad/quad1.jpg"
       },
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002967/quad2_bhrdpx.jpg"
+        "img": "/image/rooms/quad/quad2.jpg"
       },
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002968/quad3_fitbop.jpg"
+        "img": "/image/rooms/quad/quad3.jpg"
       },
       {
-        "img": "https://res.cloudinary.com/delabwrcv/image/upload/v1720002968/quad4_xe8r98.jpg"
+        "img": "/image/rooms/quad/quad4.jpg"
       }
     ],
     "info": {

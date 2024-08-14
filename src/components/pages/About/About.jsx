@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ira from "../../../../public/image/follow/f14.webp";
-import values from "../../../../public/image/follow/c1.webp";
+import ira from "../../../../public/image/follow/f14.jpg";
+import values from "../../../../public/image/follow/c1.jpg";
 import { Accordion_comps } from "@/components/shared/Accordion_comps";
 
 export default function About() {
