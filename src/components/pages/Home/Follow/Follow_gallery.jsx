@@ -16,10 +16,18 @@ export default function Follow_gallery() {
           <h2 className="text-center">Follow us on Instagram</h2>
         </div>
         <div className="mt-8 flex items-center justify-around gap-6">
-          <a href="http://facebook.com"><FaFacebookF className="lg:text-5xl text-2xl hover:scale-110 active:scale-90 hover:text-secondary transition-all" /></a>
-          <a href="http://youtube.com"><FaYoutube className="lg:text-5xl text-2xl hover:scale-110 active:scale-90 hover:text-secondary transition-all" /></a>
-          <a href="http://linkedin.com"><FaLinkedinIn className="lg:text-5xl text-2xl hover:scale-110 active:scale-90 hover:text-secondary transition-all" /></a>
-          <a href="http://twitter.com"><FaXTwitter className="lg:text-5xl text-2xl hover:scale-110 active:scale-90 hover:text-secondary transition-all" /></a>
+          <a href="https://www.facebook.com/irabotiecoresort">
+            <FaFacebookF className="lg:text-5xl text-2xl hover:scale-110 active:scale-90 hover:text-secondary transition-all" />
+          </a>
+          <a href="http://youtube.com">
+            <FaYoutube className="lg:text-5xl text-2xl hover:scale-110 active:scale-90 hover:text-secondary transition-all" />
+          </a>
+          <a href="http://linkedin.com">
+            <FaLinkedinIn className="lg:text-5xl text-2xl hover:scale-110 active:scale-90 hover:text-secondary transition-all" />
+          </a>
+          <a href="http://twitter.com">
+            <FaXTwitter className="lg:text-5xl text-2xl hover:scale-110 active:scale-90 hover:text-secondary transition-all" />
+          </a>
         </div>
         <div className="bigger_gap">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-[.625rem] w-full px-[.625rem] md:px-0">

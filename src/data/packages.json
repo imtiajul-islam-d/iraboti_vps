@@ -26,53 +26,50 @@
       "bath": 1
     },
     "packages": [
-                {
-                    "name": "Six people in a Duplex cottage",
-                    "price": "3200 bdt / 42"
-                },
-                {
-                    "name": "Five people in a Duplex cottage",
-                    "price": "3400 bdt / 44"
-                },
-                {
-                    "name": "Four people in a Duplex cottage",
-                    "price": "3800 bdt / 48"
-                },
-                {
-                    "name": "Three people in a Duplex cottage",
-                    "price": "4400 bdt / 54"
-                },
-                {
-                    "name": "Two people in a Duplex cottage",
-                    "price": "5500 bdt / 65"
-                },
-                {
-                    "name": "Single people in a Duplex cottage",
-                    "price": "9000 bdt / 100"
-                }
-            ],
-            "includes":[
-              "1-6 persons",
+      {
+        "name": "Six people in a Duplex cottage",
+        "price": "3200 bdt / 42"
+      },
+      {
+        "name": "Five people in a Duplex cottage",
+        "price": "3400 bdt / 44"
+      },
+      {
+        "name": "Four people in a Duplex cottage",
+        "price": "3800 bdt / 48"
+      },
+      {
+        "name": "Three people in a Duplex cottage",
+        "price": "4400 bdt / 54"
+      },
+      {
+        "name": "Two people in a Duplex cottage",
+        "price": "5500 bdt / 65"
+      },
+      {
+        "name": "Single people in a Duplex cottage",
+        "price": "9000 bdt / 100"
+      }
+    ],
+    "includes": [
+      "1-6 persons",
 
+      "Boat Pick Drop Service from Mongla",
 
-                 "Boat Pick Drop Service from Mongla",
+      "Three time meals",
 
-
-                 "Three time meals",
-
-
-                 "Canal Cruising"
-            ],
-            "additional":[
-              {
-                "title": "Pick & Drop service timing",
-                "value": "12 Noon"
-              },
-              {
-                "title": "Children policy",
-                "value": "6+ full payment Below 6- only food costs"
-              }
-            ]
+      "Canal Cruising"
+    ],
+    "additional": [
+      {
+        "title": "Pick service timing",
+        "value": "12 Noon"
+      },
+      {
+        "title": "Children policy",
+        "value": "6+ full payment Below 6- only food costs"
+      }
+    ]
   },
   {
     "id": 2,
@@ -101,47 +98,42 @@
       "bath": 1
     },
     "packages": [
-                {
-                    "name": "Two people in a single cottage",
-                    "price": "4500 bdt / 55"
-                },
-                {
-                    "name": "Three people in a single cottage",
-                    "price": "3500 bdt / 45"
-                },
-                {
-                    "name": "Four people in a single cottage",
-                    "price": "3000 bdt / 40"
-                },
-                {
-                    "name": "Single person in a single cottage",
-                    "price": "7400 bdt / 84"
-                }
-            ],
-            "includes":[
+      {
+        "name": "Two people in a single cottage",
+        "price": "4500 bdt / 55"
+      },
+      {
+        "name": "Three people in a single cottage",
+        "price": "3500 bdt / 45"
+      },
+      {
+        "name": "Four people in a single cottage",
+        "price": "3000 bdt / 40"
+      },
+      {
+        "name": "Single person in a single cottage",
+        "price": "7400 bdt / 84"
+      }
+    ],
+    "includes": [
+      "1-4 persons",
 
-                 "1-4 persons",
+      "Boat Pick Drop Service from Mongla",
 
+      "Three time meals",
 
-                 "Boat Pick Drop Service from Mongla",
-
-
-                 "Three time meals",
-
-
-                 "Canal Cruising"
-
-            ],
-            "additional":[
-              {
-                "title": "pick & drop service timing",
-                "value": "12 Noon"
-              },
-              {
-                "title": "Children policy",
-                "value": "6+ full payment Below 6- only food costs"
-              }
-            ]
+      "Canal Cruising"
+    ],
+    "additional": [
+      {
+        "title": "Pick service timing",
+        "value": "12 Noon"
+      },
+      {
+        "title": "Children policy",
+        "value": "6+ full payment Below 6- only food costs"
+      }
+    ]
   },
   {
     "id": 3,
@@ -170,45 +162,42 @@
       "bath": 1
     },
     "packages": [
-                {
-                    "name": "Two people in a single cottage",
-                    "price": "3850 bdt / 48"
-                },
-                {
-                    "name": "Three people in a single cottage",
-                    "price": "3200 bdt / 42"
-                },
-                {
-                    "name": "Four people in a single cottage",
-                    "price": "2650 bdt / 36"
-                },
-                {
-                    "name": "Single person in a single cottage",
-                    "price": "5400 bdt / 64"
-                }
-            ],
-             "includes":[
-                 "1-2 persons",
+      {
+        "name": "Two people in a single cottage",
+        "price": "3850 bdt / 48"
+      },
+      {
+        "name": "Three people in a single cottage",
+        "price": "3200 bdt / 42"
+      },
+      {
+        "name": "Four people in a single cottage",
+        "price": "2650 bdt / 36"
+      },
+      {
+        "name": "Single person in a single cottage",
+        "price": "5400 bdt / 64"
+      }
+    ],
+    "includes": [
+      "1-2 persons",
 
+      "Boat Pick Drop Service from Mongla",
 
-                 "Boat Pick Drop Service from Mongla",
+      "Three time meals",
 
-
-                 "Three time meals",
-
-
-                 "Canal Cruising"
-            ],
-            "additional":[
-              {
-                "title": "pick & drop service timing",
-                "value": "12 Noon"
-              },
-              {
-                "title": "Children policy",
-                "value": "6+ full payment Below 6- only food costs"
-              }
-            ]
+      "Canal Cruising"
+    ],
+    "additional": [
+      {
+        "title": "pick service timing",
+        "value": "12 Noon"
+      },
+      {
+        "title": "Children policy",
+        "value": "6+ full payment Below 6- only food costs"
+      }
+    ]
   },
   {
     "id": 4,
@@ -236,27 +225,24 @@
       "bed": 2,
       "bath": 1
     },
-    "includes":[
-              "1-5 persons",
+    "includes": [
+      "1-5 persons",
 
+      "Boat Pick Drop Service from Mongla",
 
-                 "Boat Pick Drop Service from Mongla",
+      "Three time meals",
 
-
-                 "Three time meals",
-
-
-                 "Canal Cruising"
-            ],
-            "additional":[
-              {
-                "title": "pick & drop service timing",
-                "value": "12 Noon"
-              },
-              {
-                "title": "Children policy",
-                "value": "6+ full payment Below 6- only food costs"
-              }
-            ]
+      "Canal Cruising"
+    ],
+    "additional": [
+      {
+        "title": "pick service timing",
+        "value": "12 Noon"
+      },
+      {
+        "title": "Children policy",
+        "value": "6+ full payment Below 6- only food costs"
+      }
+    ]
   }
 ]

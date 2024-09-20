@@ -8,21 +8,21 @@ import icon from "../../../../public/icons/more.svg";
 import { useState } from "react";
 import Details_Modal from "@/components/shared/Details_Modal";
 
-
 export default function Room_card({ room }) {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
       <div
         onClick={() => setShowModal((e) => e)}
-        className={`fixed z-[99] top-0 left-0 md:w-[100svw] h-[100svh] inset-0 py-5 overflow-y-auto bg-white transition-all ${showModal
-          ? "visible opacity-100 scale-100"
-          : "invisible opacity-0 scale-0"
-          }`}
+        className={`fixed z-[99] top-0 left-0 md:w-[100svw] h-[100svh] inset-0 py-5 overflow-y-auto bg-white transition-all ${
+          showModal
+            ? "visible opacity-100 scale-100"
+            : "invisible opacity-0 scale-0"
+        }`}
       >
-        {showModal && ((
+        {showModal && (
           <Details_Modal data={room} page={true} setShowModal={setShowModal} />
-        ))}
+        )}
       </div>
       <section className="w-full">
         <button
@@ -69,19 +69,19 @@ export default function Room_card({ room }) {
             </div>
             <p className="text-left sm:w-4/5 md:w-full">{room?.desc}</p>
             <div className="sm:w-4/5 md:w-full">
-              {room?.packages && <h4 className="mb-4 text-left"> Available Packages: </h4>}
-              {
-                room?.packages?.map((i, I) => <div className="flex gap-6 items-center justify-start" key={I}>
+              {room?.packages && (
+                <h4 className="mb-4 text-left"> Available Packages: </h4>
+              )}
+              {room?.packages?.map((i, I) => (
+                <div className="flex gap-6 items-center justify-start" key={I}>
                   <p>{i?.name}</p>
-                  <p>{i?.price} <span>$</span></p>
-                </div>)
-              }
+                  <p>
+                    {i?.price} <span>$</span>
+                  </p>
+                </div>
+              ))}
             </div>
-            <button
-              onClick={() => setShowModal((e) => !e)}
-              href="#"
-              className="flex items-center gap-[.625rem] xl:mt-8 md:mt-6 mt-4 text-primary"
-            >
+            <button className="flex items-center gap-[.625rem] xl:mt-8 md:mt-6 mt-4 text-primary">
               {" "}
               <span>
                 <Image src={icon} alt="" priority />{" "}

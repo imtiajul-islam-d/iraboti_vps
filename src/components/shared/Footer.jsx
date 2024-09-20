@@ -11,12 +11,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 mx-auto lg:max-w-6xl lg:grid-cols-3 justify-items-center">
           <div className="flex items-center order-2 my-32 text-white lg:my-0 lg:order-none">
             <div>
-              <div className="flex items-center justify-center w-full">
-                <span className="inline-block font-mono text-3xl text-center text-white border rounded-full border-white/10 aspect-square p-7">
-                  <MdOutlineMailOutline />
-                </span>
-              </div>
-              <a href="mailto:irabotiecoresort@gmail.com" className="text-white p_m mt-5">irabotiecoresort@gmail.com</a>
+              <a
+                href="mailto:irabotiecoresort@gmail.com"
+                className="text-white p_m mt-5"
+              >
+                <div className="flex items-center justify-center w-full">
+                  <span className="inline-block font-mono text-3xl text-center text-white border rounded-full border-white/10 aspect-square p-7">
+                    <MdOutlineMailOutline />
+                  </span>
+                </div>
+                irabotiecoresort@gmail.com
+              </a>
             </div>
           </div>
           <div className="order-1 grid-rows-1 lg:order-none ">
