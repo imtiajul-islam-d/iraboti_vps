@@ -44,8 +44,8 @@ jobs:
             - name: Install dependencies
               run: npm install
 
-            - name: Build the app
-              run: npm run build
+            # - name: Build the app
+            #   run: npm run build
             # - name: Build application
             #   run: |
             #     npm install
@@ -61,7 +61,7 @@ jobs:
 
                 # start new process
                 # pm2 start ./src/server.js --name node-app
-                pm2 start "npm start" --name=node-app
+                pm2 start "npm run dev" --name=node-app
 
                 # same PM2 process list
                 pm2 save
