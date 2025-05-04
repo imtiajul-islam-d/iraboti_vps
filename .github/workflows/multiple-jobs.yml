@@ -54,7 +54,7 @@ jobs:
               with:
                 name: nextjs-build
                 path: .next/ # Change to 'build/' if your output is a build folder
-                if-no-files-found: error # Fail the job if the folder is not found
+                # if-no-files-found: error # Fail the job if the folder is not found
                 retention-days: 5 # Optional: Set how long the artifact is stored
 
             # - name: Test application
@@ -62,40 +62,45 @@ jobs:
 
             # - name: Run tests
             #   run: npm test
-    # build-and-deploy:
-    #     runs-on: self-hosted
-    #     needs: test
-    #     steps:  
-    #         - name: Checkout code
-    #           uses: actions/checkout@v3
+    build-and-deploy:
+        runs-on: self-hosted
+        needs: build
+        steps:  
+            - name: Checkout code
+              uses: actions/checkout@v3
 
-    #         # - name: Set up Node.js
-    #         #   uses: actions/setup-node@v4
-    #         #   with:
-    #         #     node-version: "22"
+            - name: Receive the artifact
+              uses: actions/download-artifact@v4
+              with:
+                name: nextjs-build
+            
+            - name: Show the artifact
+              run: 
+                ls -a
 
-    #         - name: Install dependencies
-    #           run: npm install
 
-    #         # - name: Build the app
-    #         #   run: npm run build
-    #         # - name: Build application
-    #         #   run: |
-    #         #     npm install
-    #         #     npm run build
-    #         #     # add any build steps if needed
+            # - name: Install dependencies
+            #   run: npm install
 
-    #         - name: Deploy application
-    #           run: |
-    #             ls -a
-    #             pm2 status
-    #             # stop existing process if running
-    #             pm2 delete node-app || true
+            # - name: Build the app
+            #   run: npm run build
+            # - name: Build application
+            #   run: |
+            #     npm install
+            #     npm run build
+            #     # add any build steps if needed
 
-    #             # start new process
-    #             # pm2 start ./src/server.js --name node-app
-    #             pm2 start "npm run dev" --name=node-app
+            - name: Deploy application
+              run: |
+                ls -a
+                pm2 status
+                # stop existing process if running
+                pm2 delete node-app || true
 
-    #             # same PM2 process list
-    #             pm2 save
+                # start new process
+                # pm2 start ./src/server.js --name node-app
+                pm2 start "npm run dev" --name=node-app
+
+                # same PM2 process list
+                pm2 save
                 
