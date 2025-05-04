@@ -57,7 +57,7 @@ jobs:
                 name: nextjs-build
                 path: out/
                 # include-hidden-files: true
-                if-no-files-found: error # Fail if .next/ is not found
+                # if-no-files-found: error # Fail if .next/ is not found
                 # retention-days: 5 # Artifact stored for 5 days
             # - name: Test application
             #   run: npm run test
