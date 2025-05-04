@@ -81,9 +81,22 @@ jobs:
               run: 
                 ls -a
 
-
-            # - name: Install dependencies
-            #   run: npm install
+            - name: Create package.json
+              run: |
+                echo '{
+                  "name": "next-app",
+                  "version": "1.0.0",
+                  "scripts": {
+                    "start": "next start"
+                  },
+                  "dependencies": {
+                    "next": "^14.2.3"
+                  }
+                }' > package.json
+            
+            - name: Install dependencies
+              run: npm install
+        
 
             # - name: Build the app
             #   run: npm run build
