@@ -19,6 +19,7 @@ jobs:
               uses: actions/setup-node@v4
               with:
                 node-version: "22"
+                cache: 'npm'
 
             - name: Install packages
               run: npm install
@@ -39,6 +40,7 @@ jobs:
               uses: actions/setup-node@v4
               with:
                 node-version: "22"
+                cache: 'npm'
 
             - name: Install packages
               run: npm install
@@ -50,13 +52,13 @@ jobs:
               run: ls -la .next # Confirm .next folder exists
       
             - name: Upload build artifact
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v4.6.0
               with:
                 name: nextjs-build
-                path: .next/standalone
-                include-hidden-files: true
+                path: out/
+                # include-hidden-files: true
                 if-no-files-found: error # Fail if .next/ is not found
-                retention-days: 5 # Artifact stored for 5 days
+                # retention-days: 5 # Artifact stored for 5 days
             # - name: Test application
             #   run: npm run test
 
