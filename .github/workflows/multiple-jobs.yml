@@ -53,7 +53,7 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                 name: nextjs-build
-                path: ./next # Change to 'build/' if your output is a build folder
+                path: .next/ # Change to 'build/' if your output is a build folder
                 # if-no-files-found: error # Fail the job if the folder is not found
                 retention-days: 5 # Optional: Set how long the artifact is stored
 
