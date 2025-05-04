@@ -53,7 +53,7 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                 name: nextjs-build
-                path: .next/ # Corrected to match standard Next.js output
+                path: ./.next # Corrected to match standard Next.js output
                 if-no-files-found: error # Fail if .next/ is not found
                 retention-days: 5 # Artifact stored for 5 days
             # - name: Test application
