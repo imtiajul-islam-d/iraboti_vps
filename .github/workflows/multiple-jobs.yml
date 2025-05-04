@@ -30,6 +30,7 @@ jobs:
             #   run: npm test
     build:
         runs-on: ubuntu-latest
+        needs: test
         steps:
             - name: Checkout code
               uses: actions/checkout@v3
@@ -44,6 +45,17 @@ jobs:
 
             - name: build nextjs
               run: npm run build
+
+            - name: Verify build output
+              run: ls -la .next # Check if .next folder exists; adjust to 'build' if applicable
+      
+            - name: Upload build artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: nextjs-build
+                path: .next/ # Change to 'build/' if your output is a build folder
+                if-no-files-found: error # Fail the job if the folder is not found
+                retention-days: 5 # Optional: Set how long the artifact is stored
 
             # - name: Test application
             #   run: npm run test
