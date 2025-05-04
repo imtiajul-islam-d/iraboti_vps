@@ -55,6 +55,7 @@ jobs:
               uses: actions/upload-artifact@v4.6.0
               with:
                 name: nextjs-build
+                path: ./built
                 
                 # include-hidden-files: true
                 # if-no-files-found: error # Fail if .next/ is not found
