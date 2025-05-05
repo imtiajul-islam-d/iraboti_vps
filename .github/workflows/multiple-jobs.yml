@@ -199,10 +199,11 @@ jobs:
             name: nextjs-build
             path: ./nextjs-build
 
+        - name: Create deployment directory
+          run: mkdir -p /home/user/nextjs-app
+
         - name: Move artifact to deployment directory
-          run: |
-            rm -rf /home/user/nextjs-app/*
-            mv ./nextjs-build/* /home/user/nextjs-app/
+          run: mv ./nextjs-build/* /home/user/nextjs-app/
 
         - name: Restart application
           run: |
