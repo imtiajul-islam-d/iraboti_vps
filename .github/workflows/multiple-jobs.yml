@@ -52,23 +52,23 @@ jobs:
             run: 
               ls -a
 
-          # - name: Deploy application
-          #   run: |
-          #     ls -a
-          #     pm2 status
-          #     # stop existing process if running
-          #     pm2 delete node-app || true
-
-          #     # start new process
-          #     # pm2 start "npm start" --name=node-app
-
-          #     # same PM2 process list
-          #     pm2 save\
-
-          - name: Install and run serve package
+          - name: Deploy application
             run: |
-              npm install -g serve
-              serve .next/static -p 3000
+              ls -a
+              pm2 status
+              # stop existing process if running
+              pm2 delete node-app || true
+
+              # start new process
+              pm2 start "serve .next/static -p 3000" --name=node-app
+
+              # same PM2 process list
+              pm2 save
+
+          # - name: Install and run serve package
+          #   run: |
+          #     npm install -g serve
+          #     serve .next/static -p 3000
     
 
                 
