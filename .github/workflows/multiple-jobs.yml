@@ -1,216 +1,266 @@
-name: CI/CD Pipeline
+# name: CI/CD Pipeline
+
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
+
+# jobs: 
+#     test:
+#         runs-on: ubuntu-latest
+#         steps:
+#             - name: Checkout code
+#               uses: actions/checkout@v3
+
+#             - name: Install Node.js
+#               uses: actions/setup-node@v4
+#               with:
+#                 node-version: "22"
+#                 cache: 'npm'
+
+#             - name: Install packages
+#               run: npm install
+
+#             # - name: Test application
+#             #   run: npm run test
+
+#             # - name: Run tests
+#             #   run: npm test
+
+#     build:
+#       runs-on: ubuntu-latest
+#       needs: test
+#       steps:
+#         - name: Checkout code
+#           uses: actions/checkout@v4
+
+#         - name: Set up Node.js
+#           uses: actions/setup-node@v4
+#           with:
+#             node-version: "22"
+#             cache: 'npm'
+
+#         - name: Install dependencies
+#           run: npm install
+
+#         - name: Build Next.js app
+#           run: npm run build
+
+#         - name: Upload build artifact
+#           uses: actions/upload-artifact@v4
+#           with:
+#             name: nextjs-build
+#             path: |
+#               .next/standalone
+#               .next/static
+#     # build:
+#     #     runs-on: ubuntu-latest
+#     #     needs: test
+#     #     steps:
+#     #         - name: Checkout code
+#     #           uses: actions/checkout@v3
+
+#     #         - name: Install Node.js
+#     #           uses: actions/setup-node@v4
+#     #           with:
+#     #             node-version: "22"
+#     #             cache: 'npm'
+
+#     #         - name: Install packages
+#     #           run: npm install
+
+#     #         - name: build nextjs
+#     #           run: npm run build
+
+#     #         - name: Verify build output
+#     #           run: ls -la build # Confirm .next folder exists
+      
+#     #         # - name: Upload build artifact
+#     #         #   uses: actions/upload-artifact@v4.6.0
+#     #         #   with:
+#     #         #     name: nextjs-build
+#     #         #     path: build/
+#     #         - name: Upload build artifact
+#     #           uses: actions/upload-artifact@v4
+#     #           with:
+#     #             name: nextjs-build
+#     #             path: |
+#     #               .next/standalone
+#     #               .next/static
+                
+#                 # include-hidden-files: true
+#                 # if-no-files-found: error # Fail if .next/ is not found
+#                 # retention-days: 5 # Artifact stored for 5 days
+#             # - name: Test application
+#             #   run: npm run test
+
+#             # - name: Run tests
+#             #   run: npm test
+#     # build-and-deploy:
+#     #     runs-on: self-hosted
+#     #     needs: build
+#     #     steps:  
+#     #         - name: Checkout code
+#     #           uses: actions/checkout@v3
+
+#     #         - name: Receive the artifact
+#     #           uses: actions/download-artifact@v4
+#     #           with:
+#     #             name: nextjs-build
+            
+#     #         - name: Show the artifact
+#     #           run: 
+#     #             ls -a
+
+#     #         - name: Set up Node.js
+#     #           uses: actions/setup-node@v4
+#     #           with:
+#     #             node-version: "22"
+#     #             cache: 'npm'
+
+#     #         - name: Create package.json
+#     #           run: |
+#     #             echo '{
+#     #               "name": "next-app",
+#     #               "version": "1.0.0",
+#     #               "scripts": {
+#     #                 "start": "next start"
+#     #               },
+#     #               "dependencies": {
+#     #                 "next": "^14.2.3"
+#     #               }
+#     #             }' > package.json
+            
+#     #         - name: Install dependencies
+#     #           run: npm install
+              
+        
+
+#     #         # - name: Build the app
+#     #         #   run: npm run build
+#     #         # - name: Build application
+#     #         #   run: |
+#     #         #     npm install
+#     #         #     npm run build
+#     #         #     # add any build steps if needed
+
+#     #         - name: Deploy application
+#     #           run: |
+#     #             ls -a
+#     #             pm2 status
+#     #             # stop existing process if running
+#     #             pm2 delete node-app || true
+
+#     #             # start new process
+#     #             pm2 start "npm start" --name=node-app
+
+#     #             # same PM2 process list
+#     #             pm2 save
+#     # deploy:
+#     #   runs-on: self-hosted
+#     #   needs: build
+#     #   steps:
+#     #     - name: Checkout code
+#     #       uses: actions/checkout@v4
+
+#     #     - name: Download artifact
+#     #       uses: actions/download-artifact@v4
+#     #       with:
+#     #         name: nextjs-build
+#     #         path: ./nextjs-build
+
+#     #     - name: Move artifact to deployment directory
+#     #       run: |
+#     #         rm -rf /home/user/nextjs-app/.next
+#     #         mv ./nextjs-build/.next /home/user/nextjs-app/
+
+#     #     - name: Restart application
+#     #       run: |
+#     #         if pm2 list | grep my-app; then
+#     #           pm2 restart my-app
+#     #         else
+#     #           pm2 start "node /home/user/nextjs-app/.next/standalone/server.js" --name my-app
+#     #         fi
+#     #         pm2 save
+
+#     deploy:
+#       runs-on: self-hosted
+#       needs: build
+#       steps:
+#         - name: Checkout code
+#           uses: actions/checkout@v4
+
+#         - name: Download artifact
+#           uses: actions/download-artifact@v4
+#           with:
+#             name: nextjs-build
+#             path: ./nextjs-build
+
+#         - name: Create deployment directory
+#           run: mkdir -p /home/user/nextjs-app
+
+#         - name: Move artifact to deployment directory
+#           run: mv ./nextjs-build/* /home/user/nextjs-app/
+
+#         - name: Restart application
+#           run: |
+#             if pm2 list | grep my-app; then
+#               pm2 restart my-app
+#             else
+#               pm2 start "node /home/user/nextjs-app/standalone/server.js" --name my-app
+#             fi
+#             pm2 save
+                
+name: Deploy Next.js App
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
-jobs: 
-    test:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v3
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Build Next.js app
+        run: |
+          npm install
+          npm run build
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nextjs-build
+          path: ./
 
-            - name: Install Node.js
-              uses: actions/setup-node@v4
-              with:
-                node-version: "22"
-                cache: 'npm'
+  deploy:
+    runs-on: self-hosted
+    needs: build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-            - name: Install packages
-              run: npm install
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: nextjs-build
+          path: ./nextjs-build
 
-            # - name: Test application
-            #   run: npm run test
+      - name: Create deployment directory
+        run: mkdir -p /runner/work/nextjs-app
 
-            # - name: Run tests
-            #   run: npm test
+      - name: Move artifact to deployment directory
+        run: mv ./nextjs-build/* /runner/work/nextjs-app/
 
-    build:
-      runs-on: ubuntu-latest
-      needs: test
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v4
-
-        - name: Set up Node.js
-          uses: actions/setup-node@v4
-          with:
-            node-version: "22"
-            cache: 'npm'
-
-        - name: Install dependencies
-          run: npm install
-
-        - name: Build Next.js app
-          run: npm run build
-
-        - name: Upload build artifact
-          uses: actions/upload-artifact@v4
-          with:
-            name: nextjs-build
-            path: |
-              .next/standalone
-              .next/static
-    # build:
-    #     runs-on: ubuntu-latest
-    #     needs: test
-    #     steps:
-    #         - name: Checkout code
-    #           uses: actions/checkout@v3
-
-    #         - name: Install Node.js
-    #           uses: actions/setup-node@v4
-    #           with:
-    #             node-version: "22"
-    #             cache: 'npm'
-
-    #         - name: Install packages
-    #           run: npm install
-
-    #         - name: build nextjs
-    #           run: npm run build
-
-    #         - name: Verify build output
-    #           run: ls -la build # Confirm .next folder exists
-      
-    #         # - name: Upload build artifact
-    #         #   uses: actions/upload-artifact@v4.6.0
-    #         #   with:
-    #         #     name: nextjs-build
-    #         #     path: build/
-    #         - name: Upload build artifact
-    #           uses: actions/upload-artifact@v4
-    #           with:
-    #             name: nextjs-build
-    #             path: |
-    #               .next/standalone
-    #               .next/static
-                
-                # include-hidden-files: true
-                # if-no-files-found: error # Fail if .next/ is not found
-                # retention-days: 5 # Artifact stored for 5 days
-            # - name: Test application
-            #   run: npm run test
-
-            # - name: Run tests
-            #   run: npm test
-    # build-and-deploy:
-    #     runs-on: self-hosted
-    #     needs: build
-    #     steps:  
-    #         - name: Checkout code
-    #           uses: actions/checkout@v3
-
-    #         - name: Receive the artifact
-    #           uses: actions/download-artifact@v4
-    #           with:
-    #             name: nextjs-build
-            
-    #         - name: Show the artifact
-    #           run: 
-    #             ls -a
-
-    #         - name: Set up Node.js
-    #           uses: actions/setup-node@v4
-    #           with:
-    #             node-version: "22"
-    #             cache: 'npm'
-
-    #         - name: Create package.json
-    #           run: |
-    #             echo '{
-    #               "name": "next-app",
-    #               "version": "1.0.0",
-    #               "scripts": {
-    #                 "start": "next start"
-    #               },
-    #               "dependencies": {
-    #                 "next": "^14.2.3"
-    #               }
-    #             }' > package.json
-            
-    #         - name: Install dependencies
-    #           run: npm install
-              
-        
-
-    #         # - name: Build the app
-    #         #   run: npm run build
-    #         # - name: Build application
-    #         #   run: |
-    #         #     npm install
-    #         #     npm run build
-    #         #     # add any build steps if needed
-
-    #         - name: Deploy application
-    #           run: |
-    #             ls -a
-    #             pm2 status
-    #             # stop existing process if running
-    #             pm2 delete node-app || true
-
-    #             # start new process
-    #             pm2 start "npm start" --name=node-app
-
-    #             # same PM2 process list
-    #             pm2 save
-    # deploy:
-    #   runs-on: self-hosted
-    #   needs: build
-    #   steps:
-    #     - name: Checkout code
-    #       uses: actions/checkout@v4
-
-    #     - name: Download artifact
-    #       uses: actions/download-artifact@v4
-    #       with:
-    #         name: nextjs-build
-    #         path: ./nextjs-build
-
-    #     - name: Move artifact to deployment directory
-    #       run: |
-    #         rm -rf /home/user/nextjs-app/.next
-    #         mv ./nextjs-build/.next /home/user/nextjs-app/
-
-    #     - name: Restart application
-    #       run: |
-    #         if pm2 list | grep my-app; then
-    #           pm2 restart my-app
-    #         else
-    #           pm2 start "node /home/user/nextjs-app/.next/standalone/server.js" --name my-app
-    #         fi
-    #         pm2 save
-
-    deploy:
-      runs-on: self-hosted
-      needs: build
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v4
-
-        - name: Download artifact
-          uses: actions/download-artifact@v4
-          with:
-            name: nextjs-build
-            path: ./nextjs-build
-
-        - name: Create deployment directory
-          run: mkdir -p /home/user/nextjs-app
-
-        - name: Move artifact to deployment directory
-          run: mv ./nextjs-build/* /home/user/nextjs-app/
-
-        - name: Restart application
-          run: |
-            if pm2 list | grep my-app; then
-              pm2 restart my-app
-            else
-              pm2 start "node /home/user/nextjs-app/standalone/server.js" --name my-app
-            fi
-            pm2 save
-                
+      - name: Restart application
+        run: |
+          if pm2 list | grep my-app; then
+            pm2 restart my-app
+          else
+            pm2 start "node /runner/work/nextjs-app/standalone/server.js" --name my-app
+          fi
+          pm2 save
