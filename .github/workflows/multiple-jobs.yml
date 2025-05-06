@@ -28,6 +28,9 @@ jobs:
         - name: Build Next.js app
           run: npm run build
 
+        - name: Copy static assets
+          run: cp -r public build/standalone/ && cp -r build/static build/standalone/build/
+
         - name: Upload build artifact
           uses: actions/upload-artifact@v4
           with:
@@ -61,7 +64,7 @@ jobs:
 
               # start new process
               # pm2 start "serve .next/static -p 3000" --name=node-app
-              pm2 start "npm run start" --name=node-app
+              pm2 start "node build/standalone/server.js" --name=node-app
 
               # same PM2 process list
               pm2 save

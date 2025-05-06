@@ -11,7 +11,8 @@ const nextConfig = {
       },
     ],
   },
-  // distDir: 'build',
+  output: 'standalone',
+  distDir: 'build',
 };
 
 export default nextConfig;
