@@ -33,8 +33,8 @@ jobs:
           with:
             name: nextjs-build
             path: |
-              .next/standalone
-              .next/static
+              ./
+              !node_modules/
 
     build-and-deploy:
       runs-on: self-hosted
@@ -60,7 +60,8 @@ jobs:
               pm2 delete node-app || true
 
               # start new process
-              pm2 start "serve .next/static -p 3000" --name=node-app
+              # pm2 start "serve .next/static -p 3000" --name=node-app
+              pm2 start "npm run start" --name=node-app
 
               # same PM2 process list
               pm2 save
