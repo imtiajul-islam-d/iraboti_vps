@@ -46,7 +46,7 @@ export default function Navigation() {
             )}
             <div
               onClick={() => setShowMenu((e) => !e)}
-              class=" transition-all cursor-pointer hover:scale-90 active:scale-110 w-[3rem] md:w-[4.5rem]"
+              className=" transition-all cursor-pointer hover:scale-90 active:scale-110 w-[3rem] md:w-[4.5rem]"
             >
               <CgMenuLeft className="text-3xl lg:text-6xl" />
             </div>
@@ -70,15 +70,14 @@ export default function Navigation() {
             <div className="text-white">
               <p className="hidden link md:block">EN</p>
             </div>
-            <a
+            {/* <a
               href="tel:+8801404004400"
               className="p-3 transition-colors bg-gray-200 rounded-full md:p-5 text-primary hover:scale-90 active:scale-110"
             >
               <span className="md:text-xl">
                 <MdOutlinePhoneInTalk />
               </span>
-              {/* <p>{data?.phone}</p> */}
-            </a>
+            </a> */}
             {/* <button className="hidden button md:block">{data?.btn}</button> */}
           </div>
         </div>
