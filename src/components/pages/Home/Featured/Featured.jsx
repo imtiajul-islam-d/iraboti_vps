@@ -13,7 +13,7 @@ export default function Ex() {
         <div className="">
           <div className="flex flex-col items-center justify-center gap-0 md:gap-8 lg:gap-0">
             <p className="text-center p_m">Iraboti Eco Resort</p>
-            <h2 className="text-center">The community tourismssssssssssss</h2>
+            <h2 className="text-center">The community tourism</h2>
           </div>
           <div className="bigger_gap">
             <div className="block lg:hidden mb-14">
