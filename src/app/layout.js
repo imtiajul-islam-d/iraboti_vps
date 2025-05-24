@@ -1,4 +1,6 @@
 import "@/app/assets/globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 import { Cormorant_Garamond, Jost } from "next/font/google";
 const jost = Jost({
@@ -50,6 +52,7 @@ export default function RootLayout({ children }) {
           {children}
         </Theme_provider>
       </body>
+      <GoogleAnalytics gaId="G-R78GZ5PCTL" />
     </html>
   );
 }
