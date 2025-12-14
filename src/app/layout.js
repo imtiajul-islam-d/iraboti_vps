@@ -49,6 +49,7 @@ export default function RootLayout({ children }) {
           // enableSystem
           // disableTransitionOnChange
         >
+        {/* <FacebookPixel/> */}
           {children}
         </Theme_provider>
       </body>
